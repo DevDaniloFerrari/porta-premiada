@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div style={{ display: "flex" }}>
-      <Porta porta={p1} />
+      <Porta value={p1} onChange={setP1}/>
     </div>
   );
 }
