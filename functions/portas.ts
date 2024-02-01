@@ -2,11 +2,11 @@ import PortaModel from "@/model/porta";
 
 export function criarPortas(
   quantidade: number,
-  selecionada: number
+  portaComPresente: number
 ): PortaModel[] {
   return Array.from({ length: quantidade }, (_, i) => {
     const numero = i + 1;
-    const temPresente = numero === selecionada;
+    const temPresente = numero === portaComPresente;
     return new PortaModel(numero, temPresente);
   });
 }
