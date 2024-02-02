@@ -32,7 +32,7 @@ export default function Fomrulario() {
           />
         </Cartao>
         <Cartao bgcolor="#28a085">
-          <Link href={`/jogo/4/2`} className={styles.link}>
+          <Link href={`/jogo/${quantidadePortas}/${comPresente}`} className={styles.link}>
             <h2>Iniciar</h2>
           </Link>
         </Cartao>
